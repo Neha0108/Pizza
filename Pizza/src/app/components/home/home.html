@@ -1,0 +1,15 @@
+<main class="container">
+<h2>Pizza Delivery</h2>
+<p>
+    Welcome to pizza delivery service. This is the place when you may chose the most delicious pizza you may like
+    from wide variety of option!
+</p>
+<hr/>
+        <h3>We are performing free delivery in case if you order in higher than 20$.</h3>
+
+    @if (!isLoggedIn()) {
+        <button class="btn btn-primary" routerLink="login"> Sign In and Order</button>
+    } @else {
+        <p>Welcome back, <strong>{{username}}</strong></p>
+    }
+</main>

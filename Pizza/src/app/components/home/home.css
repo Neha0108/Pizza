@@ -1,0 +1,72 @@
+main.container {
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Main heading */
+main h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #dc3545; /* pizza red */
+  margin-bottom: 20px;
+}
+
+/* Description text */
+main p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+/* Divider */
+main hr {
+  margin: 30px auto;
+  width: 60%;
+  border-top: 2px solid #eee;
+}
+
+/* Offer text */
+main h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Button */
+main .btn-primary {
+  background-color: #dc3545;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+main .btn-primary:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  main.container {
+    padding: 25px;
+  }
+
+  main h2 {
+    font-size: 26px;
+  }
+
+  main h3 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="container">
+<h2> Menu </h2>
+<div class ="row">
+    @for(st of pizza; track st.id){
+      <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="{{st.image}}" class="card-img-top" alt="">
+    <h5 class="card-title">{{st.id}}. {{st.name}} </h5>
+    <p class="card-text">
+      Price : ${{st.price}}
+    </p>
+    <button type="button" class="btn btn-primary" (click)= addCart(st)>Add to Cart</button>
+  </div>
+</div>
+</div>}
+</div>
+</div>
